@@ -1,0 +1,15 @@
+body {
+    background-color:  lightyellow;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.active {
+    background-color: aliceblue;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.pepe {
+    height: 100vh;
+}

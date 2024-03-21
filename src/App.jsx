@@ -1,17 +1,30 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/itemListContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomeComponent from './components/home/HomeComponent';
+import ItemListContainerComponent from './components/itemlistcontainer/ItemListContainerComponent';
+import ContactComponent from './components/contact/ContactComponent';
+import NavBarComponent from './components/navigation/NavBarComponent';
+import CartwidgetComponent from './components/cartwidget/CartwidgetComponent';
+import ItemDetailContainerComponent from './components/itemdetail/ItemDetailContainerComponent';
+
+
 
 function App() {
-
-
   return (
     <>
-      <NavBar />
-      <ItemListContainer greeting="Bienvenidos al mundo del vapeo"/>
+      <BrowserRouter>
+        <NavBarComponent/>
+        <Routes>
+          <Route exact path="/" element={<HomeComponent/>} />
+          <Route exact path="/products" element={<ItemListContainerComponent/>} />
+          <Route exact path="/product/:prodId" element={<ItemDetailContainerComponent />} />
+          <Route exact path="/contact" element={<ContactComponent />}/>
+          <Route exact path="/cart" element ={<CartwidgetComponent/>}/>
+          <Route exact path="/categoria/:categoria" element ={<ItemListContainerComponent/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
