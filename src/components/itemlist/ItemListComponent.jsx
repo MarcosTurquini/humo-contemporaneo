@@ -38,15 +38,15 @@ export default function ItemListComponent () {
             
             
             {
-            categoria ? <h1 className="text-center capitalize font-bold p-2">{categoria}</h1> : <h1 className="font-bold text-center p-2 ">Nuestros Productos</h1>
+               categoria ? <h1 className="text-center capitalize font-bold p-2">{categoria}</h1> : <h1 className="font-bold text-center p-2 ">Nuestros Productos</h1>
 
             }
-            
+              
             <section className="grid grid-cols-2 p-2 gap-2 m-auto justify-center lg:grid-cols-4 lg:gap-10">
             {products.map((product)=>(
                 <article 
                 key={product.id}
-                className="flex flex-col shadow-md max-w-80 bg-amber-500  p-3 border border-solid border-black text-center"
+                 className="flex flex-col shadow-md max-w-80 bg-amber-500  p-3 border border-solid border-black text-center"
                 >
                     <h4 className='h-[20%] m-auto text-center items-center flex font-bold' >{product.titulo}</h4>
                     <img className='h-[80%]' src={product.img} alt={product.nombre} />

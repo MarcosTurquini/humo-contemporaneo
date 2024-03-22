@@ -166,7 +166,7 @@ export const carrousel = [
     {id: "C1", img:"https://www.fundacionfemeba.org.ar/website/image/blog.post/50271_0beb71f/title_image"},
     {id: "C2", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLP-_EXOxkHb_dDd8iQ5vhOC60RGhAPNrQA&usqp=CAU"},
     {id: "C3", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKpK3FxN_xR6hKqpMkPobdCNGH-j8CnbOzw&usqp=CAU"},
-    {id: "C4", img:"https://i.pinimg.com/236x/fc/e0/f6/fce0f6027d2fcbbd232fddcd71873f03.jpg"},
+    {id: "C4", img:"https://images.unsplash.com/photo-1530745342582-0795f23ec976?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHZhcGVhcnxlbnwwfHwwfHx8MA%3D%3D"},
 ];
 
 export const cargarProductos = new Promise ((resolve) => {
@@ -178,3 +178,5 @@ export const cargarProductos = new Promise ((resolve) => {
 export const cargarProducto = (id) => {
     return products.find ((prod) => prod.id == id);
 };
+
+
